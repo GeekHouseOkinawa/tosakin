@@ -2,6 +2,7 @@ PATH
   remote: ./components/tosakin_circle_ci
   specs:
     tosakin_circle_ci (0.0.1)
+      idobata
       rails (~> 4.0.4)
 
 GEM
