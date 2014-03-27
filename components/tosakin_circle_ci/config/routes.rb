@@ -1,3 +1,3 @@
 TosakinCircleCi::Engine.routes.draw do
-  root to: 'circle#index'
+  post '/', to: 'circle#create'
 end
