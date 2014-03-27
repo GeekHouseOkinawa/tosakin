@@ -1,7 +1,9 @@
 module TosakinCircleCi
   class CircleController < ApplicationController
     def index
-      render json: params.to_json
+      build = CircleCiBuild.new(params[:payload])
+      TosakinCircleCi.idobata.post CircleCiBuildFormatter.new(build).to_message
+      render nothing: true
     end
   end
 end
