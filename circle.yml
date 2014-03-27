@@ -1,0 +1,8 @@
+deployment:
+  production:
+    branch: master
+    heroku:
+      appname: tosakin
+notify:
+  webhooks:
+    - url: http://tosakin.herokuapp.com/hooks/circle
