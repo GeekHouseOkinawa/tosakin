@@ -20,6 +20,7 @@ Tosakin is an idobata generic webhook adapter for any webhooks.
 - heroku create tosakin
 - git push heroku master
 - heroku run rake db:migrate
+- heroku config:add IDOBATA_HOOK_URL=YOUR_IDOBATA_HOOK_URL
 
 * ...
 
