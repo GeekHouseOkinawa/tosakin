@@ -15,3 +15,6 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+
+gem 'idobata'
+gem 'tosakin_circle_ci', path: './components/tosakin_circle_ci'

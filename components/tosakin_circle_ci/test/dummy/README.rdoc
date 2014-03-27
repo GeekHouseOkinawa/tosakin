@@ -1,6 +1,9 @@
 == README
 
-Tosakin is an idobata generic webhook adapter for any webhooks.
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
 
 * Ruby version
 
@@ -17,10 +20,6 @@ Tosakin is an idobata generic webhook adapter for any webhooks.
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
-- heroku create tosakin
-- git push heroku master
-- heroku run rake db:migrate
-- heroku config:add IDOBATA_HOOK_URL=YOUR_IDOBATA_HOOK_URL
 
 * ...
 
