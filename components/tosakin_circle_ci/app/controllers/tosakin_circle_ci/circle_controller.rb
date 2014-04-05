@@ -12,12 +12,12 @@ module TosakinCircleCi
       CircleCiBuild.new(params[:payload])
     end
 
+    def current_idobata
+      Idobata::Client.new(params[:idobata_hook_url]) if params[:idobata_hook_url]
+    end
+
     def idobata
-      if params[:idobata_hook_url]
-        Idobata::Client.new(params[:idobata_hook_url])
-      else
-        Tosakin.idobata
-      end
+      current_idobata || Tosakin.idobata
     end
   end
 end
