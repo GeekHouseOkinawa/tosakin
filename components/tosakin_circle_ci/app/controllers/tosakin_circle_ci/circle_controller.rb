@@ -2,7 +2,8 @@ module TosakinCircleCi
   class CircleController < ApplicationController
     def create
       build = CircleCiBuild.new(params[:payload])
-      idobata.post CircleCiBuildFormatter.new(build).to_message
+      formatter = CircleCiBuildFormatter.new(build)
+      idobata.post source: formatter.html_format, format: :html
       render nothing: true
     end
 
