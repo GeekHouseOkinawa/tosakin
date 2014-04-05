@@ -2,8 +2,8 @@ PATH
   remote: ./components/tosakin_circle_ci
   specs:
     tosakin_circle_ci (0.0.1)
-      idobata
       rails (~> 4.0.4)
+      tosakin_message
 
 PATH
   remote: ./components/tosakin_message
@@ -17,6 +17,7 @@ PATH
   specs:
     tosakin_travis_ci (0.0.1)
       rails (~> 4.0.4)
+      tosakin_message
 
 GEM
   remote: https://rubygems.org/
