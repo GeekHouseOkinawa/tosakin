@@ -1,8 +1,7 @@
 module TosakinTravisCi
   class Constraint
     def matches?(request)
-      p request.headers
-      request.headers.key?('Travis-Repo-Slug')
+      request.headers['Travis-Repo-Slug']
     end
   end
 end
