@@ -13,11 +13,10 @@ module TosakinTravisCi
     end
 
     def finished_in
-      if started_at && finished_at
-        (Time.parse(finished_at) - Time.parse(started_at)).to_i.to_s
-      else
-        ''
-      end
+      seconds = (Time.parse(finished_at) - Time.parse(started_at)).to_i.to_s
+      "(Finished in #{seconds} seconds)"
+    rescue
+      ''
     end
 
     def label
