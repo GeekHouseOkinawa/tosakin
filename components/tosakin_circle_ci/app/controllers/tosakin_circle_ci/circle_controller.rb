@@ -11,7 +11,7 @@ module TosakinCircleCi
       if params[:endpoint_url]
         Idobata::Client.new(params[:endpoint_url])
       else
-        TosakinCircleCi.idobata
+        Tosakin.idobata
       end
     end
   end
