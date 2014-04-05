@@ -2,7 +2,7 @@ module TosakinCircleCi
   class CircleController < ApplicationController
     def create
       formatter = CircleCiBuildFormatter.new(current_build)
-      Tosakin.message_class.create(source: formatter.html_format, format: :html, token: params[:token])
+      TosakinMessage.message_class.create(source: formatter.html_format, format: :html, token: params[:token])
       render nothing: true
     end
 

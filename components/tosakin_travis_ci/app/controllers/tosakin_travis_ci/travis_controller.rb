@@ -2,7 +2,7 @@ module TosakinTravisCi
   class TravisController < ApplicationController
     def create
       formatter = TravisCiBuildFormatter.new(current_build)
-      Tosakin.message_class.create(source: formatter.html_format, format: :html, token: params[:token])
+      TosakinMessage.message_class.create(source: formatter.html_format, format: :html, token: params[:token])
       render nothing: true
     end
 

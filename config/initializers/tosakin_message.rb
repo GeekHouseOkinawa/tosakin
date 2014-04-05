@@ -1,1 +1,1 @@
-Tosakin.message_class ||= TosakinMessage
+TosakinMessage.message_class ||= TosakinMessage::Message
