@@ -20,8 +20,43 @@ $ heroku config:add IDOBATA_HOOK_URL=YOUR_IDOBATA_HOOK_URL
 ```
 
 ## Supports
+- TODO: BitBucket
+- TODO: Generic
+- TODO: GitHub
+- TODO: Heroku
+- TODO: Jenkins
+- TODO: New Relic
+- TODO: Papertrail
+- TODO: PivotalTracker
+- [TravisCI](https://travis-ci.org/)
 - [CircleCI](https://circleci.com/)
-- TODO: and more.
+
+### TravisCI
+![image](doc/travisci.png)
+
+In your `travis.yml`
+
+```
+notifications:
+  webhooks:
+    - http://<YOUR_HEROKU_APP_NAME_HERE>.herokuapp.com/hook/
+```
+
+or
+
+```
+notifications:
+  webhooks:
+    - http://<YOUR_HEROKU_APP_NAME_HERE>.herokuapp.com/hook/<YOUR_IDOBATA_HOOK_API_TOKEN_HERE>
+```
+
+#### Customize template
+In your `config/initializers/tosakin_travis_ci_custom_template.rb`
+``` ruby
+TosakinTravisCi::TravisCiBuildFormatter.template = <<'TEMPLATE'
+<%= label %> in build <a href="<%= travis_ci_build_url %>">#<%= number %></a>
+TEMPLATE
+```
 
 ### CircleCI
 ![image](doc/circleci.png)
