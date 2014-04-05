@@ -17,6 +17,7 @@ group :doc do
 end
 
 gem 'idobata'
+gem 'tosakin_message',   path: './components/tosakin_message'
 gem 'tosakin_circle_ci', path: './components/tosakin_circle_ci'
 gem 'tosakin_travis_ci', path: './components/tosakin_travis_ci'
 
