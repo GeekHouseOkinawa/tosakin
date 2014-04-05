@@ -19,5 +19,20 @@ module TosakinTravisCi
         ''
       end
     end
+
+    def label
+      ERB.new("<span class=\"label <%= label_class %>\"><%= status_message %></span>").result(binding)
+    end
+
+    def label_class
+      case status_message
+      when 'Passed', 'Fixed'
+        'label-success'
+      when 'Failed', 'Still Failing'
+        'label-important'
+      else
+        ''
+      end
+    end
   end
 end
