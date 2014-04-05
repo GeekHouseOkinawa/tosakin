@@ -3,7 +3,7 @@ Tosakin
 
 ![Build Status](https://circleci.com/gh/GeekHouseOkinawa/tosakin.png?circle-token=099868480ab777365edd8a456b0d5360e72f8109)
 [![Code Climate](https://codeclimate.com/github/GeekHouseOkinawa/tosakin.png)](https://codeclimate.com/github/GeekHouseOkinawa/tosakin)
-
+[![Dependency Status](https://gemnasium.com/GeekHouseOkinawa/tosakin.svg)](https://gemnasium.com/GeekHouseOkinawa/tosakin)
 
 Tosakin is an idobata generic webhook adapter for any webhooks.
 
