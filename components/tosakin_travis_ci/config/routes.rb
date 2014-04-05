@@ -1,3 +1,3 @@
 TosakinTravisCi::Engine.routes.draw do
-  post '/:token', to: 'travis#create', constraints: TosakinTravisCi::Constraint.new
+  post '*token', to: 'travis#create', constraints: TosakinTravisCi::Constraint.new
 end
