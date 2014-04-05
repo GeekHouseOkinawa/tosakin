@@ -14,7 +14,7 @@ module TosakinTravisCi
 
     def finished_in
       if started_at && finished_at
-        (Time.parse(finished_at) && Time.parse(started_at)).to_i.to_s
+        (Time.parse(finished_at) - Time.parse(started_at)).to_i.to_s
       else
         ''
       end
