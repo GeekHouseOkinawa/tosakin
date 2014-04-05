@@ -7,11 +7,11 @@ require "tosakin_travis_ci/version"
 Gem::Specification.new do |s|
   s.name        = "tosakin_travis_ci"
   s.version     = TosakinTravisCi::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of TosakinTravisCi."
-  s.description = "TODO: Description of TosakinTravisCi."
+  s.authors     = ["Seiei Higa"]
+  s.email       = ["hanachin@gmail.com"]
+  s.homepage    = "https://github.com/GeekHouseOkinawa/tosakin"
+  s.summary     = "Tosakin TravisCi plugin"
+  s.description = "Receive travis ci build result and post to idobata.io."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
