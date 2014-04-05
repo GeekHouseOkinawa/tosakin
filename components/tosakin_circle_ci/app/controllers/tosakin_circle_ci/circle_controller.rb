@@ -2,7 +2,7 @@ module TosakinCircleCi
   class CircleController < ApplicationController
     def create
       formatter = CircleCiBuildFormatter.new(current_build)
-      idobata.post source: formatter.html_format, format: :html
+      Tosakin.message_class.create(source: formatter.html_format, format: :html, token: params[:token])
       render nothing: true
     end
 
@@ -10,14 +10,6 @@ module TosakinCircleCi
 
     def current_build
       CircleCiBuild.new(params[:payload])
-    end
-
-    def current_idobata
-      Idobata::Client.new(params[:idobata_hook_url]) if params[:idobata_hook_url]
-    end
-
-    def idobata
-      current_idobata || Tosakin.idobata
     end
   end
 end

@@ -9,6 +9,7 @@ PATH
   remote: ./components/tosakin_message
   specs:
     tosakin_message (0.0.1)
+      idobata
       rails (~> 4.0.4)
 
 PATH
@@ -173,7 +174,6 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
   coveralls
-  idobata
   jbuilder (~> 1.2)
   jquery-rails
   pg

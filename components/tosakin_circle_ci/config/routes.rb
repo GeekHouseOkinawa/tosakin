@@ -1,3 +1,3 @@
 TosakinCircleCi::Engine.routes.draw do
-  post '/', to: 'circle#create', constraints: TosakinCircleCi::Constraint.new
+  post '/:token', to: 'circle#create', constraints: TosakinCircleCi::Constraint.new
 end

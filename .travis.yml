@@ -5,5 +5,5 @@ rvm:
 
 notifications:
   webhooks:
-    - https://idobata.io/hook/212142f3-8e38-4667-bd35-49aa08f5c076
-    - http://tosakin.herokuapp.com/travis?idobata_hook_url=https%3A%2F%2Fidobata.io%2Fhook%2F99d855e9-e1d1-49fa-9a78-a0d392c43013
+    - https://idobata.io/hook/e9bddf7f-b4c3-41b0-a52c-6ed67016f053
+    - http://tosakin.herokuapp.com/travis/b41df70e-5880-42ec-a18e-1d6f23afd580
