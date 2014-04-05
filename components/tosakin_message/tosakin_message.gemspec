@@ -7,11 +7,11 @@ require "tosakin_message/version"
 Gem::Specification.new do |s|
   s.name        = "tosakin_message"
   s.version     = TosakinMessage::VERSION
-  s.authors     = ["TODO: Your name"]
-  s.email       = ["TODO: Your email"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of TosakinMessage."
-  s.description = "TODO: Description of TosakinMessage."
+  s.authors     = ["Seiei Higa"]
+  s.email       = ["hanachin@gmail.com"]
+  s.homepage    = "https://github.com/GeekHouseOkinawa/tosakin"
+  s.summary     = "Default message class for Tosakin."
+  s.description = "Tosakin message to post to idobata.io."
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
