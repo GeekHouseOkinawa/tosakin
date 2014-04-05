@@ -7,7 +7,7 @@ require 'rails/all'
 Bundler.require(*Rails.groups)
 
 module Tosakin
-  mattr_accessor :idobata
+  mattr_accessor :message_class
 
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.

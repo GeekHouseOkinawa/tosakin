@@ -1,3 +1,3 @@
-module TosakinMessage
+class TosakinMessage
   VERSION = "0.0.1"
 end
