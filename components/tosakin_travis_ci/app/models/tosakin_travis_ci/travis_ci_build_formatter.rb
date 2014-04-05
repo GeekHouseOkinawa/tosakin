@@ -8,7 +8,7 @@ module TosakinTravisCi
 
     def template
       @@template ||= <<'TEMPLATE'
-<%= github =><a href="<%= travis_ci_build_url %>">#<%= number %></a> (<%= branch %> - <%= short_revision %>): <%= status_message %> in <%= finished_in %> seconds)
+<%= github %><a href="<%= travis_ci_build_url %>">#<%= number %></a> (<%= branch %> - <%= short_revision %>): <%= status_message %> in <%= finished_in %> seconds)
 <%= committer_name %>: <%= message %> (<a href="<%= compare_url %>">changeset</a>)
 TEMPLATE
     end
