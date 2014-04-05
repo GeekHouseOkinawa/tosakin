@@ -31,7 +31,7 @@ In your `circle.yml`
 ```
 notify:
   webhooks:
-    - url: http://<YOUR_HEROKU_APP_NAME_HERE>.herokuapp.com/circle
+    - url: http://<YOUR_HEROKU_APP_NAME_HERE>.herokuapp.com/hook
 ```
 
 or
@@ -39,7 +39,7 @@ or
 ```
 notify:
   webhooks:
-    - url: http://<YOUR_HEROKU_APP_NAME_HERE>.herokuapp.com/circle?idobata_hook_url=https%3A%2F%2Fidobata.io%2Fhook%2F<YOUR_IDOBATA_HOOK_API_TOKEN_HERE>
+    - url: http://<YOUR_HEROKU_APP_NAME_HERE>.herokuapp.com/hook/<YOUR_IDOBATA_HOOK_API_TOKEN_HERE>
 ```
 
 #### Customize template
