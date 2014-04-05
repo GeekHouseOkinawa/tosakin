@@ -18,6 +18,7 @@ end
 
 gem 'idobata'
 gem 'tosakin_circle_ci', path: './components/tosakin_circle_ci'
+gem 'tosakin_travis_ci', path: './components/tosakin_travis_ci'
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
