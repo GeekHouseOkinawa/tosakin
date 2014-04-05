@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Tosakin CircleCi plugin"
   s.description = "Receive circle ci build result and post to idobata.io."
 
-  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
+  s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
   s.test_files = Dir["test/**/*"]
 
   s.add_dependency "rails", "~> 4.0.4"
