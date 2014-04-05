@@ -18,6 +18,8 @@ $ heroku config:add IDOBATA_HOOK_URL=YOUR_IDOBATA_HOOK_URL
 - TODO: and more.
 
 ### CircleCI
+![image](doc/circleci.png)
+
 In your `circle.yml`
 
 ```
