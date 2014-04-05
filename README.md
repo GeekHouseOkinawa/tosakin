@@ -41,3 +41,11 @@ notify:
   webhooks:
     - url: http://<YOUR_HEROKU_APP_NAME_HERE>.herokuapp.com/circle?idobata_hook_url=https%3A%2F%2Fidobata.io%2Fhook%2F<YOUR_IDOBATA_HOOK_API_TOKEN_HERE>
 ```
+
+#### Customize template
+In your `config/initializers/tosakin_circle_ci_custom_template.rb`
+``` ruby
+TosakinCircleCi::CircleCiBuildFormatter.template = <<'TEMPLATE'
+<%= label %> in build <a href="<%= build_url %>"><%= build_num %></a>
+TEMPLATE
+```
