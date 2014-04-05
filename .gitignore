@@ -17,3 +17,6 @@
 
 # Pow
 .powenv
+
+# Coveralls
+coverage
