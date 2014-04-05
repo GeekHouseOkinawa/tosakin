@@ -5,4 +5,5 @@ deployment:
       appname: tosakin
 notify:
   webhooks:
+    - url: http://tosakin.herokuapp.com/hook/
     - url: http://tosakin.herokuapp.com/hook/523de05c-a713-4dc0-beb6-49d9138e5e73
