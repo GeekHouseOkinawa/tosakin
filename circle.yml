@@ -5,4 +5,4 @@ deployment:
       appname: tosakin
 notify:
   webhooks:
-    - url: http://tosakin.herokuapp.com/circle?endpoint_url=https%3A%2F%2Fidobata.io%2Fhook%2F99d855e9-e1d1-49fa-9a78-a0d392c43013
+    - url: http://tosakin.herokuapp.com/circle?idobata_hook_url=https%3A%2F%2Fidobata.io%2Fhook%2F99d855e9-e1d1-49fa-9a78-a0d392c43013

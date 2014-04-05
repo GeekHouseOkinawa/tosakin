@@ -8,8 +8,8 @@ module TosakinCircleCi
 
     private
     def idobata
-      if params[:endpoint_url]
-        Idobata::Client.new(params[:endpoint_url])
+      if params[:idobata_hook_url]
+        Idobata::Client.new(params[:idobata_hook_url])
       else
         Tosakin.idobata
       end
