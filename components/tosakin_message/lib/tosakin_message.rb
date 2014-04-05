@@ -1,3 +1,5 @@
+require 'idobata'
+
 class TosakinMessage
   attr_accessor :source, :format, :token
 
@@ -15,11 +17,11 @@ class TosakinMessage
 
   def idobata
     if token
-      Idobata::Client.new(token)
+      ::Idobata::Client.new(token)
     elsif ENV['IDOBATA_HOOK_URL']
-      Idobata::Client.new(ENV['IDOBATA_HOOK_URL'])
+      ::Idobata::Client.new(ENV['IDOBATA_HOOK_URL'])
     else
-      Idobata.client
+      ::Idobata.client
     end
   end
 end
