@@ -8,8 +8,14 @@ module TosakinTravisCi
 
     private
 
+    def payload
+      ActiveSupport::JSON.decode(params[:payload])
+    rescue
+      {}
+    end
+
     def current_build
-      TravisCiBuild.new(params[:payload])
+      TravisCiBuild.new(payload)
     end
 
     def current_idobata
