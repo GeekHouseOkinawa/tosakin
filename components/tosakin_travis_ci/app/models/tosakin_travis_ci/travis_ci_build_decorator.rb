@@ -27,7 +27,7 @@ module TosakinTravisCi
       case status_message
       when 'Passed', 'Fixed'
         'label-success'
-      when 'Failed', 'Still Failing'
+      when 'Broken', 'Still Failing'
         'label-important'
       else
         ''
