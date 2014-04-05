@@ -22,3 +22,7 @@ gem 'tosakin_circle_ci', path: './components/tosakin_circle_ci'
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
 end
+
+group :test do
+  gem 'coveralls', require: false
+end
