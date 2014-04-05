@@ -20,8 +20,14 @@ EOS
       ERB.new(template).result @build.extend(CircleCiBuildDecorator).context
     end
 
+    alias source html_format
+
+    def format
+      :html
+    end
+
     def to_message
-      { source: html_format, format: :html }
+      { source: source, format: format }
     end
   end
 end
