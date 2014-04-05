@@ -1,6 +1,8 @@
 Tosakin
 ====
 
+![Build Status](https://circleci.com/gh/GeekHouseOkinawa/tosakin.png?circle-token=099868480ab777365edd8a456b0d5360e72f8109)
+
 Tosakin is an idobata generic webhook adapter for any webhooks.
 
 ## Deploy to Heroku
