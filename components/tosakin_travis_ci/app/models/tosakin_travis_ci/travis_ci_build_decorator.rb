@@ -1,5 +1,5 @@
 module TosakinTravisCi
-  class TravisCiBuildDecorator
+  module TravisCiBuildDecorator
     def github
       "#{repository['owner_name']}/#{repository['name']}"
     end
