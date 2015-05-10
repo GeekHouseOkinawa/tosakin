@@ -9,6 +9,13 @@ Tosakin
 
 Tosakin is an idobata generic webhook adapter for any webhooks.
 
+** PLEASE DON'T USE THIS. **
+
+This repository is not maintained. 
+
+use [idobata/idobata-hooks](https://github.com/idobata/idobata-hooks) instead.
+
+
 ## Deploy to Heroku
 ```
 $ git clone https://github.com/GeekHouseOkinawa/tosakin.git
